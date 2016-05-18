@@ -1,0 +1,18 @@
+﻿<Placement>
+
+  <!--<Place 
+    Parts_Common_Body_Summary="-"
+    Fields_Link-Blog="-"
+    Fields_Common_Text-Location="-"
+         />-->
+
+  <Match ContentType="TeamMember" DisplayType="Summary">
+    <Place
+      Parts_Common_Body_Summary="-"
+      Parts_Common_Metadata_Summary ="-"
+      Parts_Common_Metadata ="Meta:1"
+      />
+    
+  </Match>
+  
+</Placement>

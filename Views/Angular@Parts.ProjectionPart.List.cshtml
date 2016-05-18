@@ -1,0 +1,8 @@
+@using Raven.AsyncTemplates.Extensions
+@{ 
+    var listPath = string.Format("model.{0}.{1}", Model.ContentPart.ContentType.ToCamelCase(), (Model.Name ?? "items").ToCamelCase());
+}
+
+<ul ng-class="@listPath.classes">
+    <li ng-repeat="item in @listPath.items" ng-class="@listPath.itemClasses"></li>
+</ul>

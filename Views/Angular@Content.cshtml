@@ -1,0 +1,23 @@
+﻿@using Orchard.DisplayManagement.Descriptors;
+@{ 
+    Display.BindingAction = ViewBag.TemplateType;
+}
+
+<div>
+    <header>
+        @if (Model.Meta != null) {
+            Display(Model.Meta);
+        }
+
+        @Display(Model.Header)
+    </header>
+
+    @Display(Model.Content)
+    
+
+    @if (Model.Footer != null) {
+        <footer>
+            @Display(Model.Footer);
+        </footer>
+    }
+</div>

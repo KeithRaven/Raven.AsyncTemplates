@@ -1,0 +1,6 @@
+@using Orchard.DisplayManagement.Descriptors;
+@{
+    Display.BindingAction = ViewBag.TemplateType;
+    Model.ContentItems.ContentPart = Model.ContentPart;
+}
+@Display(Model.ContentItems)

@@ -1,0 +1,14 @@
+﻿@using Orchard.Utility.Extensions
+@using Raven.AsyncTemplates.Extensions
+@{
+    string fieldName = Model.ContentField.Name;
+    string partName = Model.ContentPart.PartDefinition.Name;
+    partName = partName.DropFirst();
+    fieldName = fieldName.DropFirst();
+
+    string name = Model.ContentField.DisplayName;
+    <p class="text-field text-field-@name.HtmlClassify()" ng-if="model.@(partName).@(fieldName).value !== null">
+        <span class="name">@name:</span>
+        <span class="value" ng-bind="model.@(partName).@(fieldName).value === true ? '@T(Model.Settings.OnLabel).ToString()' : '@T(Model.Settings.OffLabel).ToString()'"></span>
+    </p>    
+}

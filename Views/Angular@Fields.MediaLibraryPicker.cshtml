@@ -1,0 +1,17 @@
+﻿@using Raven.AsyncTemplates.Extensions
+@using Orchard.ContentManagement
+@using Orchard.Utility.Extensions;
+@{
+
+    string name = Model.ContentField.DisplayName;
+    string fieldName = Model.ContentField.Name;
+    string partName = Model.ContentPart.PartDefinition.Name;
+    partName = partName.DropFirst();
+    fieldName = fieldName.DropFirst();
+}
+
+<section class="media-library-picker-field media-library-picker-field-@name.HtmlClassify()">
+    <h3>@name</h3>
+    <div ng-repeat="img in model.@(partName).@(fieldName)"><img ng-src="{{img.url}}" /></div>
+</section>
+

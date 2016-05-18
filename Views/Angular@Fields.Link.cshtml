@@ -1,0 +1,14 @@
+﻿@using Orchard.Utility.Extensions;
+@using Raven.AsyncTemplates.Extensions
+@{
+
+    string name = Model.ContentField.DisplayName;
+    string fieldName = Model.ContentField.Name;
+    string partName = Model.ContentPart.PartDefinition.Name;
+    partName = partName.DropFirst();
+    fieldName = fieldName.DropFirst();
+}
+<p class="link-field link-field-@name.HtmlClassify()" ng-if="model.@(partName).@(fieldName).url">
+    <span class="name">@name:</span>
+    <span class="value"><a ng-href="{{model.@(partName).@(fieldName).url}}" ng-bind="model.@(partName).@(fieldName).text" target="{{model.@(partName).@(fieldName).target}}" ></a></span>
+</p>

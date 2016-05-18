@@ -1,0 +1,12 @@
+﻿[
+  {
+    "inputs": [
+            "Assets/angular.js",
+            "Assets/angular-sanitize.js",
+            "Assets/module.js",
+            "Assets/Controllers/*.js",
+            "Assets/Directives/*.js"
+    ],
+    "output": "Scripts/Lib.js"
+  }
+]

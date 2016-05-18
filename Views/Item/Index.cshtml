@@ -1,0 +1,17 @@
+﻿@{ 
+    Script.Include("Lib.js").AtFoot();
+
+}
+<div ng-app="AsyncTemplates">
+
+    <div ng-controller="ItemController">
+        <input ng-model="contentItemId" type="text" />
+
+        <select ng-model="displayType">
+            <option value="Detail">Detail</option>
+        </select>
+
+        <rv-content-item content-item-id="{{contentItemId}}" display-type="{{displayType}}" resource-url="{{resourceUrl}}" ></rv-content-item>
+    </div>
+</div>
+

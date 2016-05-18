@@ -1,0 +1,18 @@
+﻿@using Orchard.Utility.Extensions;
+@using Raven.AsyncTemplates.Extensions
+@{
+
+    string name = Model.ContentField.DisplayName;
+    string fieldName = Model.ContentField.Name;
+    string partName = Model.ContentPart.PartDefinition.Name;
+    partName = partName.DropFirst();
+    fieldName = fieldName.DropFirst();
+
+
+}
+<p class="taxonomy-field" ng-if="model.@(partName).@(fieldName).length > 0">
+    <span class="name">@name.CamelFriendly():</span> 
+    <ul>
+        <li ng-repeat="term in model.@(partName).@(fieldName)"><a ng-click="navigate(term.resourceUrl)" ng-bind="term.name"></a></li>
+    </ul>
+</p>
