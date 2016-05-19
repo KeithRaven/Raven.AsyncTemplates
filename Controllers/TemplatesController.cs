@@ -19,11 +19,10 @@ namespace Raven.AsyncTemplates.Controllers
         }
 
         // GET: Templates
-        public ActionResult Index(string contentType, BindingAction templateType ,string displayType = "Summary")
+        public ActionResult Index(string contentType, string templateType ,string displayType = "Summary")
         {
-            ViewBag.TemplateType = templateType;
             var model = _services.ContentManager.New(contentType);
-            var vm = _services.ContentManager.BuildDisplay(model, displayType);
+            var vm = _services.ContentManager.BuildDisplay(model, displayType, bindingType: templateType);
             return View(vm);
         }
     }

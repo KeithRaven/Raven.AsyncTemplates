@@ -1,14 +1,5 @@
-﻿@using Orchard.DisplayManagement.Descriptors
-@using Orchard.Core.Shapes
+﻿@using Orchard.Core.Shapes
 @{
-    Display.BindingAction = ViewBag.TemplateType;
-}
-
-
-@{
-    var displayHelper = Display;
-    displayHelper.BindingAction = BindingAction.Angular;
-
     var items = CoreShapes.Order(Model);
 }
 
