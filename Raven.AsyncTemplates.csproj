@@ -99,7 +99,8 @@
     <Compile Include="Controllers\TemplatesController.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Routes.cs" />
-    <Compile Include="Services\AngularAsyncTemplateProvider.cs" />
+    <Compile Include="Services\Providers\AngularAsyncTemplateProvider.cs" />
+    <Compile Include="Services\IAsyncTemplateProvider.cs" />
     <Compile Include="Shapes\TemplateShapeAlterations.cs" />
   </ItemGroup>
   <ItemGroup>
