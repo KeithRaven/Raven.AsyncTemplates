@@ -1,1 +1,1 @@
-﻿<div class="published">{{model.metaDataPart.publishedUtc ? model.metaDataPart.publishedUtc : 'drafts'}}</div>
+﻿<div class="published">{{@AngularHelpers.PathForPart(Model, "PublishedUtc") ? @AngularHelpers.PathForPart(Model, "PublishedUtc") : 'drafts'}}</div>

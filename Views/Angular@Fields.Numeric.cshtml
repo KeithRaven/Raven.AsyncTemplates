@@ -1,16 +1,10 @@
 ﻿@using Orchard.Utility.Extensions
-@using Raven.AsyncTemplates.Extensions
-
 @{
-    string fieldName = Model.ContentField.Name;
-    string partName = Model.ContentPart.PartDefinition.Name;
-    partName = partName.DropFirst();
-    fieldName = fieldName.DropFirst();
-
+    string path = AngularHelpers.PathForField(Model, "Value");
     string name = Model.ContentField.DisplayName;
 }
 
-<p class="numeric-field numeric-field-@name.HtmlClassify()" ng-if="model.@(partName).@(fieldName).value">
+<p class="numeric-field numeric-field-@name.HtmlClassify()" ng-if="@path">
     <span class="name">@name:</span>
-    <span class="value" ng-bind="model.@(partName).@(fieldName).value"></span>
+    <span class="value" ng-bind="@path"></span>
 </p>

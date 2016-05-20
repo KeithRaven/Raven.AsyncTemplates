@@ -102,6 +102,7 @@
     <Compile Include="Services\Providers\AngularAsyncTemplateProvider.cs" />
     <Compile Include="Services\IAsyncTemplateProvider.cs" />
     <Compile Include="Shapes\TemplateShapeAlterations.cs" />
+    <Compile Include="Utility\AngularHelpers.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Item\Index.cshtml" />

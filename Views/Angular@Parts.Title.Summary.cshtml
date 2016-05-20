@@ -1,2 +1,2 @@
 
-<h2 ng-bind="model.titlePart.title" ng-click="navigate(model.metadata.resourceUrl)"></h2>
+<h2 ng-bind="@AngularHelpers.PathForPart(Model, "Title")" ng-click="navigate(model.metadata.resourceUrl)"></h2>

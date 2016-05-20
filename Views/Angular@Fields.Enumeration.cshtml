@@ -1,16 +1,10 @@
 ﻿@using Orchard.Utility.Extensions
-@using Raven.AsyncTemplates.Extensions
-
 @{
-    string fieldName = Model.ContentField.Name;
-    string partName = Model.ContentPart.PartDefinition.Name;
-    partName = partName.DropFirst();
-    fieldName = fieldName.DropFirst();
-
+    string path = AngularHelpers.PathForField(Model, "Value");
     string name = Model.ContentField.DisplayName;
-    <p class="enumeration-field enumeration-field-@name.HtmlClassify()" ng-if="model.@(partName).@(fieldName).value">
+    <p class="enumeration-field enumeration-field-@name.HtmlClassify()" ng-if="@path">
         <span class="name">@name:</span>
-        <span class="value" ng-repeat="item in model.@(partName).@(fieldName).value"><span ng-bind="item"></span></span>
+        <span class="value" ng-repeat="item in @path"><span ng-bind="item"></span></span>
     </p>
 
 }

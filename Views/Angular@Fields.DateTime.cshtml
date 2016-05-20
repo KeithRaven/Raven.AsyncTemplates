@@ -1,14 +1,8 @@
 ﻿@using Orchard.Utility.Extensions;
-@using Raven.AsyncTemplates.Extensions
 @{
-    string fieldName = Model.ContentField.Name;
-    string partName = Model.ContentPart.PartDefinition.Name;
-    partName = partName.DropFirst();
-    fieldName = fieldName.DropFirst();
-
     string name = Model.ContentField.DisplayName;
 }
 <p class="date-time-field date-time-field-@name.HtmlClassify()">
     <span class="name">@name.CamelFriendly():</span>
-    <span class="value" ng-bind="model.@(partName).@(fieldName).value | date: 'medium'"></span>
+    <span class="value" ng-bind="@AngularHelpers.PathForField(Model, "Value") | date: 'medium'"></span>
 </p>

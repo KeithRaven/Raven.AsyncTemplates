@@ -2,11 +2,13 @@
 @{ 
     string partName = Model.ContentPart.PartDefinition.Name;
     partName = partName.DropFirst();
-    var listPath = string.Format("model.{0}", partName);
+    var listPath = AngularHelpers.PathForPart(Model, "Items");
+    var listClassesPath = AngularHelpers.PathForPart(Model, "ItemClasses");
+    var itemClassesPath = AngularHelpers.PathForPart(Model, "ItemClasses");
 }
 
-<ul ng-class="@(listPath).classes">
-    <li ng-repeat="item in @(listPath).items" ng-class="@(listPath).itemClasses">
-        <div><div rv-content-item @*content-item-id="{{item.metadata.id}}" display-type="Detail" resource-url="{{item.metadata.resourceUrl}}"*@ content-item="item"></div></div>
+<ul ng-class="@listClassesPath">
+    <li ng-repeat="item in @listPath" ng-class="@itemClassesPath">
+        <div><div rv-content-item  content-item="item"></div></div>
     </li>
 </ul>

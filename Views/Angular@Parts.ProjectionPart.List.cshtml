@@ -1,6 +1,6 @@
 @using Raven.AsyncTemplates.Extensions
 @{ 
-    var listPath = string.Format("model.{0}.{1}", Model.ContentPart.ContentType.ToCamelCase(), (Model.Name ?? "items").ToCamelCase());
+    var listPath = AngularHelpers.PathForPart(Model, Model.Name ?? "items");
 }
 
 <ul ng-class="@listPath.classes">
