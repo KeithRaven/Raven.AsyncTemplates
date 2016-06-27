@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Web.Routing;
 using Orchard;
 
-namespace Raven.AsyncTemplates.Services
+namespace Morphous.AsyncTemplates.Services
 {
     public interface IAsyncTemplateProvider : IDependency
     {

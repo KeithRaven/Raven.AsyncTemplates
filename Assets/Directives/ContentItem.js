@@ -28,7 +28,7 @@
 
                 if (itemIdTimeout) $timeout.cancel(itemIdTimeout);
 
-                var resourceUrl = '/api/raven.api/item/' + contentItemId;
+                var resourceUrl = '/api/morphous.api/item/' + contentItemId;
                 if (displayType !== "Detail") {
                     resourceUrl +=  '/' + displayTypel
                 }

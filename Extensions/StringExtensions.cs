@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Raven.AsyncTemplates.Extensions
+namespace Morphous.AsyncTemplates.Extensions
 {
     public static class StringExtensions
     {

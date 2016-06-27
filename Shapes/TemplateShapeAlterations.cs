@@ -4,13 +4,13 @@ using Orchard.DisplayManagement;
 using Orchard.DisplayManagement.Descriptors;
 using Orchard.DisplayManagement.Implementation;
 using Orchard.Environment;
-using Raven.AsyncTemplates.Services;
+using Morphous.AsyncTemplates.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Raven.AsyncTemplates.Shapes
+namespace Morphous.AsyncTemplates.Shapes
 {
     public class TemplateShapeAlterations : IShapeTableProvider
     {

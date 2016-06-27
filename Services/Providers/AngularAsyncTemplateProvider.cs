@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace Raven.AsyncTemplates.Services.Providers
+namespace Morphous.AsyncTemplates.Services.Providers
 {
     public class AngularAsyncTemplateProvider : IAsyncTemplateProvider
     {
@@ -15,7 +15,7 @@ namespace Raven.AsyncTemplates.Services.Providers
         public string GetTemplateUrl(RequestContext context, string ContentType, string displayType)
         {
             UrlHelper urlHelper = new UrlHelper(context);
-            return urlHelper.Action("Index", "Templates", new { area = "Raven.AsyncTemplates", contentType = ContentType, displayType = displayType, templateType = "Angular" });
+            return urlHelper.Action("Index", "Templates", new { area = "Morphous.AsyncTemplates", contentType = ContentType, displayType = displayType, templateType = "Angular" });
         }
     }
 }

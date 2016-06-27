@@ -1,4 +1,4 @@
-﻿Name: Raven.AsyncTemplates
+﻿Name: Morphous.AsyncTemplates
 AntiForgery: enabled
 Author: The Orchard Team
 Website: http://orchardproject.net
@@ -6,6 +6,6 @@ Version: 0.1
 OrchardVersion: 1.0
 Description: Description for the module
 Features:
-    Raven.AsyncTemplates:
-        Description: Description for feature Raven.AsyncTemplates.
-		Dependencies: Raven.Api
+    Morphous.AsyncTemplates:
+        Description: Description for feature Morphous.AsyncTemplates.
+		Dependencies: Morphous.Api

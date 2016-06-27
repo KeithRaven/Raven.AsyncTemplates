@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using Raven.AsyncTemplates.Extensions;
+using Morphous.AsyncTemplates.Extensions;
 
-namespace Raven.AsyncTemplates.Utility
+namespace Morphous.AsyncTemplates.Utility
 {
     public static class AngularHelpers
     {

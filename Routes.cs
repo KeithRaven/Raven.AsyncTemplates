@@ -4,7 +4,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using Orchard.Mvc.Routes;
 
-namespace Raven.AsyncTemplates
+namespace Morphous.AsyncTemplates
 {
     public class Routes : IRouteProvider
     {
@@ -23,7 +23,7 @@ namespace Raven.AsyncTemplates
                     Route = new Route(
                         "Templates/{templateType}/{contentType}/{displayType}",
                         new RouteValueDictionary {
-                            {"area", "Raven.AsyncTemplates"},
+                            {"area", "Morphous.AsyncTemplates"},
                             {"controller", "Templates"},
                             {"action", "Index"},
                             { "displayType", "Detail"}
@@ -31,7 +31,7 @@ namespace Raven.AsyncTemplates
                         new RouteValueDictionary {
                         },
                         new RouteValueDictionary {
-                            {"area", "Raven.AsyncTemplates"}
+                            {"area", "Morphous.AsyncTemplates"}
                         },
                         new MvcRouteHandler())
                 }

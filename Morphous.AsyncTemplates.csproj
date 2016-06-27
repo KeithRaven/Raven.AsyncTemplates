@@ -10,8 +10,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Raven.AsyncTemplates</RootNamespace>
-    <AssemblyName>Raven.AsyncTemplates</AssemblyName>
+    <RootNamespace>Morphous.AsyncTemplates</RootNamespace>
+    <AssemblyName>Morphous.AsyncTemplates</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <FileUpgradeFlags>
@@ -129,9 +129,9 @@
       <Project>{9916839C-39FC-4CEB-A5AF-89CA7E87119F}</Project>
       <Name>Orchard.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Raven.Api\Raven.Api.csproj">
+    <ProjectReference Include="..\Morphous.Api\Morphous.Api.csproj">
       <Project>{ce4ccc44-abd8-4c0a-8749-78ff24d22916}</Project>
-      <Name>Raven.Api</Name>
+      <Name>Morphous.Api</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
