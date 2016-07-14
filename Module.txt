@@ -1,11 +1,9 @@
-﻿Name: Morphous.AsyncTemplates
+﻿Name: Morphous Async Templates
 AntiForgery: enabled
-Author: The Orchard Team
-Website: http://orchardproject.net
+Author: Morphous
+Website: https://github.com/morphous
 Version: 0.1
 OrchardVersion: 1.0
-Description: Description for the module
-Features:
-    Morphous.AsyncTemplates:
-        Description: Description for feature Morphous.AsyncTemplates.
-		Dependencies: Morphous.Api
+Description: Display content items asynchronously with AngularJS.
+Category: API
+Dependencies: Morphous.Api
